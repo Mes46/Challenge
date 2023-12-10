@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-index.css" />
+    <link rel="stylesheet" href="../css/style-login.css" />
+    <title>Login</title>
+</head>
+<body>
+    <!--Inicio Header-->
+    <header>
+        <nav class="navbar container">
+          <!--Logo-->
+          <picture class="navbar__logo">
+            <a href="./index.html">
+              <img
+                src="../img/branding/logo_light_horizontal.svg"
+                alt="Isologotipo de la Marca Funkoshop"
+              />
+            </a>
+          </picture>
+          <!--Enlaces-->
+          <ul class="navbar__menu">
+            <li class="navbar__item with-submenu">
+              <a href="./pages/shop.html" class="navbar__link with-icon">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+              <ul class="submenu">
+                <li class="submenu__item"><a href="" class="submenu__link ">Funkos</a></li>
+                <li class="submenu__item"><a href="" class="submenu__link">Remeras</a></li>
+                <li class="submenu__item"><a href="" class="submenu__link">LLaveros</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a href="./pages/contacto.html" class="navbar__link">CONTACTO</a>
+            </li>
+            <li class="navbar__item">
+              <a href="./pages/login.html" class="navbar__link">LOGIN</a>
+            </li>
+            <li class="navbar__item">
+              <a href="./pages/cart.html" class="navbar__cart">
+                <img src="../img/icons/cart-icon.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--Fin Header-->
+
+
+    <main id="login" class="container">
+        <h2 class="login__title">INGRESAR A MI CUENTA</h2>
+        <form class="login__form form" action="" method="post">
+            <div class="form__box--grid">
+                <label class="form__label" for="email">Email:</label>
+                <input class="form__input" type="text" name="email" id="email" placeholder="johndoe@email.com">
+            </div>
+            <div class="form__box--grid">
+                <label class="form__label" for="password">Contraseña:</label>
+                <input class="form__input" type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+            </div>
+            <div class="form__submission">
+                <input class="form__btn btn btn--primary btn--large" type="submit" value="Ingresar">
+                <div class="form__remember">
+                    <input type="checkbox" name="remember" id="">
+                    <label for="">Recordarme</label>
+                </div>
+            </div>
+            <a class="form__link" href="">Olvidé mi contraseña</a>
+        </form>
+      </main>
+
+      <footer class="footer">
+      
+        <nav class="navbar container">
+          <ul class="navbar__item">
+            <li class="navbar__item"><a class="navbar__link" href="./pages/shop.html">SHOP</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./pages/register.html">REGISTRARSE</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./pages/login.html">LOGIN</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./pages/contacto.html">CONTACTO</a></li>
+          </ul>
+          <picture class="">
+            <img class=""
+              src="../img/branding/isotype.svg"
+              alt="Isotipo de la marca Funkoshop"
+            />
+          </picture>
+        </nav>
+      
+      <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+    <!--Fin Footer-->
+    <!-- Iconify -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+</html>

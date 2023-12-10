@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iconify-->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <!-- Bootstrap -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/style-index.css">
+    <link rel="stylesheet" href="../../css/style-list.css">
+    <title>Listado de Productos</title>
+</head>
+<body>
+    <!-- Navegación -->
+     <!--Inicio Header-->
+     <header>
+        <nav class="navbar container">
+          <!--Logo-->
+          <picture class="navbar__logo">
+            <a href="../../index.html">
+              <img
+                src="../../img/branding/logo_light_horizontal.svg"
+                alt="Isologotipo de la Marca Funkoshop"
+              />
+            </a>
+          </picture>
+          <!--Enlaces-->
+          <ul class="navbar__menu">
+            <li class="navbar__item with-submenu">
+                <a href="../../pages/#" class="submenu__link ">ver tienda</a>
+            </li>
+            <li class="navbar__item">
+                <a href="../../pages/#" class="submenu__link ">admin</a>
+            </li>
+            <li class="navbar__item">
+                <a href="../../pages/#" class="submenu__link ">salir</a>
+            </li>
+            
+          </ul>
+        </nav>
+      </header>
+      <!--Fin Header-->
+    
+        <!-- Table -->
+    <main class="main">
+        
+        <!-- Formulario de creación -->
+        <section class="form-create container">
+            <h1 class="form-create__title">CREAR UN NUEVO ITEM</h1><br />
+            <form class="form-create">
+                <label for="categoria">Categoría:</label>
+                <select name="categoria" id="categoria">
+                    <option value="0">Seleccionar</option>
+                   <!-- <option value="1">STW001005</option>
+                    <option value="2">PKM001006</option>
+                    <option value="3">HPT001005</option>-->
+                </select>
+                <label for="licencia">Licencia:</label>
+                <select name="licencia" id="licencia">
+                    <option value="0">Seleccionar</option>
+                   <!-- <option value="1">STAR WARS</option>
+                    <option value="2">POKEMON</option>
+                    <option value="3">HARRY POTTER</option>-->
+                </select><br /><br />
+                <label for="nombre-prod"><b>Nombre del producto:</b></label>
+                <input type="text" name="nombre-prod" id="nombre-prod" placeholder="Katashi Hatake Shippuden Saga">
+                <br /><br />
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10">
+                    Descripción del producto
+                </textarea><br />
+                <label for="sku"><b>SKU:</b></label>
+                <input type="text" name="sku" id="sku" placeholder="SSK111AB001">
+                <label for="precio"><b>Precio:</b></label>
+                <input type="text" name="precio" id="precio" placeholder="$0.000.00">
+                
+                <label for="stock"><b>Stock:</b></label>
+                <input type="text" name="stock" id="stock" placeholder="0"><br /><br />
+                <label for="descuento"><b>Descuento:</b></label>
+                <input type="text" name="descuento" id="descuento" placeholder="0%">
+                <label for="cuotas"><b>Cuotas:</b></label>
+                <select name="cuotas" id="cuotas">
+                    <option value="cuotas">3 Cuotas sin interés</option>
+                </select><br /><br />
+                <label for="imagenes"><b>Imágenes:</b></label>
+
+                <input type="file" name="archivo" id="archivo" value="Elegir archivo">
+                <span>No se ha seleccionado ningún archivo</span><br /><br />
+                
+                <button type="button">Agregar Producto</button>
+                <button type="button">Limpiar</button>
+            </form>
+        </section>
+
+    </main>
+    <!--Inicio Footer-->
+    <footer class="footer">
+      
+        <nav class="navbar container">
+          <ul class="navbar__item">
+            <li class="navbar__item"><a class="navbar__link" href="./pages/shop.html">SHOP</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./pages/register.html">REGISTRARSE</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./pages/login.html">LOGIN</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./pages/contacto.html">CONTACTO</a></li>
+          </ul>
+          <picture class="">
+            <img class=""
+              src="../../img/branding/isotype.svg"
+              alt="Isotipo de la marca Funkoshop"
+            />
+          </picture>
+        </nav>
+      
+     </footer>
+    <!--Fin Footer-->
+    
+    
+</body>
+</html>
